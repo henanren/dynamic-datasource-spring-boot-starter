@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    dynamic:
+      primary: master #设置默认的数据源或者数据源组,默认值即为master
+      datasource:
+        master:
+          username: root
+          password: 123456
+          url: jdbc:mysql://localhost:3306/master?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+          driver-class-name: com.mysql.jdbc.Driver
+          ##schema: db/schema.sql
+        slave_1:
+          username: root
+          password: 123456
+          url: jdbc:mysql://localhost:3306/slave_1?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+          driver-class-name: com.mysql.jdbc.Driver
+        slave_2:
+          username: root
+          password: 123456
+          url: jdbc:mysql://localhost:3306/slave_2?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+          driver-class-name: com.mysql.jdbc.Driver
+        slave_3:
+          username: root
+          password: 123456
+          url: jdbc:mysql://localhost:3306/slave_3?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+          driver-class-name: com.mysql.jdbc.Driver
+logging:
+  level:
+    com.baomidou: debug
