@@ -1,3 +1,5 @@
+
+  赶紧集成体验一下吧！ 如果需要更多功能请点击下面链接查看详细文档！
 <p align="center">
 <img src="https://images.gitee.com/uploads/images/2019/0626/231046_f44892b9_709883.png" border="0" />
 
